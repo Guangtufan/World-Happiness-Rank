@@ -1,5 +1,6 @@
 # World-Happiness-Rank
 
+```R
 library(ggplot2)  
 library(ggmap)  
 library(mapdata)  
@@ -21,6 +22,6 @@ ggplot(hm, aes(x=long, y=lat, group=group, fill=Happiness.Score)) +
   geom_polygon() +  
   scale_fill_gradient2(low='#3b66b0',high = '#bf4d40',midpoint = 5,name="Happiness") +  
   theme(legend.position = c(0.1,0.2)) 
-  
+```  
   ## World Happiness Map
   ![map](https://github.com/Guangtufan/World-Happiness-Rank/blob/master/World%20Happiness.png)
